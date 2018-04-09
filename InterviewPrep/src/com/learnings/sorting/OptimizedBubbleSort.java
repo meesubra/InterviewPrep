@@ -12,23 +12,21 @@ public class OptimizedBubbleSort {
 	}
 	
 	public static void sort(int[] numbersToSort) {
-		
 		int n = numbersToSort.length;
-		boolean swapped = false;
+		boolean isSwapped;
 		
 		for(int i = 0; i < n-1; i++) {
-			swapped = false;
+			isSwapped = false;
 			for(int j = i; j < n; j++) {
 				if(numbersToSort[i] > numbersToSort[j]) {
 					SortingUtils.swap(numbersToSort,i,j);
-					swapped = true;
+					isSwapped = true;
 				}
-			}
-			if(swapped == false)
+			}			
+			if(isSwapped == false)
 				break;
 			System.out.println(Arrays.toString(numbersToSort));
 		}
 		System.out.println(Arrays.toString(numbersToSort));
 	}
-
 }
