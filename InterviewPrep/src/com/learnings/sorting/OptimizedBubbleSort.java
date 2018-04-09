@@ -6,7 +6,7 @@ public class OptimizedBubbleSort {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int[] numbersToSort = SortingUtils.getInputNumbers();
+		int[] numbersToSort = SortingUtils.generateRandomIntegers();
 		
 		sort(numbersToSort);
 	}
@@ -25,7 +25,7 @@ public class OptimizedBubbleSort {
 			}			
 			if(isSwapped == false)
 				break;
-			System.out.println(Arrays.toString(numbersToSort));
+			System.out.println("Step " + i + ":" + Arrays.toString(numbersToSort));
 		}
 		System.out.println(Arrays.toString(numbersToSort));
 	}

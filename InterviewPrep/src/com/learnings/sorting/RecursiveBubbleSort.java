@@ -15,7 +15,7 @@ public class RecursiveBubbleSort {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int[] numbersToSort = SortingUtils.getInputNumbers();
+		int[] numbersToSort = SortingUtils.generateRandomIntegers();
 		
 		sort(numbersToSort);
 	}
