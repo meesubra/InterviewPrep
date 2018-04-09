@@ -15,6 +15,10 @@ public class BubbleSort {
 		// TODO Auto-generated method stub
 		int[] numbersToSort = SortingUtils.getInputNumbers();
 		
+		sort(numbersToSort);
+	}
+	
+	public static void sort(int[] numbersToSort) {
 		int n = numbersToSort.length;
 		for(int i = 0; i < n-1; i++) {
 			for(int j = i; j < n; j++) {

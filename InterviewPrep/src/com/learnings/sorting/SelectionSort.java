@@ -18,6 +18,11 @@ public class SelectionSort {
 
 		int[] numbersToSort = SortingUtils.getInputNumbers();
 		
+		sort(numbersToSort);
+	}
+	
+	public static void sort(int[] numbersToSort) {
+
 		int n = numbersToSort.length;
 		int minIndex = 0;
 		for(int i = 0; i < n-1; i++) {

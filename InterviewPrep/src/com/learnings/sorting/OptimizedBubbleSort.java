@@ -8,6 +8,11 @@ public class OptimizedBubbleSort {
 		// TODO Auto-generated method stub
 		int[] numbersToSort = SortingUtils.getInputNumbers();
 		
+		sort(numbersToSort);
+	}
+	
+	public static void sort(int[] numbersToSort) {
+		
 		int n = numbersToSort.length;
 		boolean swapped = false;
 		
